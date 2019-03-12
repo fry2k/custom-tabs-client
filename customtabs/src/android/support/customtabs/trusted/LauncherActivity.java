@@ -91,7 +91,7 @@ public class LauncherActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mCustomTabsProviderPackage = CustomTabsClient.getPackageName(this,
-                TrustedWebUtils.SUPPORTED_CHROME_PACKAGES, false);
+                TrustedWebUtils.SUPPORTED_CHROME_PACKAGES, true);
 
         if (mCustomTabsProviderPackage == null) {
             TrustedWebUtils.showNoPackageToast(this);
